@@ -16,7 +16,6 @@
     label.text = &lt;#string#&gt;;
     label.textColor = &lt;#color#&gt;;
     label.textAlignment = &lt;#NSTextAlignment#&gt;;
-    [&lt;#view#&gt; addSubview:label];
     label;
 });</string>
 	<key>IDECodeSnippetIdentifier</key>

@@ -13,13 +13,11 @@
     textField = [[UITextField alloc]initWithFrame:CGRectMake( &lt;#x#&gt;, &lt;#y#&gt;, &lt;#width#&gt;, &lt;#height#&gt;)];
     textField.text = &lt;#string#&gt;;
     textField.textColor = &lt;#color#&gt;;
-    [textField setSecureTextEntry:NO];
     textField.keyboardType = UIKeyboardTypeDefault;
     textField.returnKeyType = UIReturnKeyDone;
     textField.placeholder = &lt;#string#&gt;;
     textField.font = &lt;#font#&gt;;
     textField.delegate = self;
-    [&lt;#view#&gt; addSubview:textField];
     textField;
 });</string>
 	<key>IDECodeSnippetIdentifier</key>

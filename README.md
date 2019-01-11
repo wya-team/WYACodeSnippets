@@ -102,7 +102,7 @@ $ python setup_snippets.py
 > 8. `layoutSubviews` - 展开 `layoutSubviews` 方法
 > 9. `create_btn` - 创建一个UIButton(<font color="red">自定义未完成</font>)
 > 10. `create_imgview` - 创建一个UIImageView（<font color="red">自定义未完成</font>）
-> 11. `create_keyWindow` - 快速创建keyWindow（<font color="red">自定义未完成</font>）
+> 11. `create_keyWindow` - 快速创建keyWindow
 > 12. `create_label` - 创建一个UILabel（<font color="red">自定义未完成</font>）
 > 13. `create_tf` - 创建一个UITextField（<font color="red">自定义未完成</font>）
 > 14. `create_view` - 创建一个UIView（<font color="red">自定义未完成</font>）

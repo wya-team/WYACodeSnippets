@@ -10,7 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-ViewController *vc = [ViewController new];
+&lt;#ViewController#&gt; * vc = [&lt;#ViewController#&gt; new];
 UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
 self.window.rootViewController = nav;
 [self.window makeKeyAndVisible];</string>
