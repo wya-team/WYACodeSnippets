@@ -16,7 +16,7 @@
     textField.keyboardType = UIKeyboardTypeDefault;
     textField.returnKeyType = UIReturnKeyDone;
     textField.placeholder = &lt;#string#&gt;;
-    textField.font = &lt;#font#&gt;;
+    textField.font = [UIFont systemFontOfSize:&lt;#(CGFloat)#&gt;];
     textField.delegate = self;
     textField;
 });</string>

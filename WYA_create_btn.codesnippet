@@ -9,13 +9,24 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// 创建button</string>
+	<string>UIButton * button = ({
+	button = [[UIButton alloc]initWithFrame:CGRectMake( &lt;#x#&gt;, &lt;#y#&gt;, &lt;#width#&gt;, &lt;#height#&gt;)];
+	[button setTitle:&lt;#(nullable NSString *)#&gt; forState:UIControlStateNormal];
+	[button setTitle:&lt;#(nullable NSString *)#&gt; forState:UIControlStateSelected];
+	[button setTitleColor:&lt;#(nullable UIColor *)#&gt; forState:UIControlStateNormal];
+	[button setImage:&lt;#(nullable UIImage *)#&gt; forState:UIControlStateNormal];
+	[button setImage:&lt;#(nullable UIImage *)#&gt; forState:UIControlStateSelected];
+	button.titleLabel.font = [UIFont systemFontOfSize:&lt;#(CGFloat)#&gt;];
+	[button setBackgroundImage:&lt;#(nullable UIImage *)#&gt; forState:UIControlStateNormal];
+	[button addTarget:self action:@selector(&lt;#selector#&gt;) forControlEvents:UIControlEventTouchUpInside];
+	button;
+});</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>D4251DE1-1177-4C75-A156-8910001059F3</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>UIButton-Babutton</string>
+	<string>UIButton-Button</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>create_btn</string>
 	<key>IDECodeSnippetUserSnippet</key>

@@ -12,10 +12,11 @@
 	<string>UILabel *label = ({
     label = [[UILabel alloc]initWithFrame:CGRectMake( &lt;#x#&gt;, &lt;#y#&gt;, &lt;#width#&gt;, &lt;#height#&gt;)];
     label.backgroundColor = &lt;#color#&gt;;
-    label.font = &lt;#font#&gt;;
+    label.font = [UIFont systemFontOfSize:&lt;#(CGFloat)#&gt;];
     label.text = &lt;#string#&gt;;
     label.textColor = &lt;#color#&gt;;
     label.textAlignment = &lt;#NSTextAlignment#&gt;;
+    label.numberOfLines = 0;
     label;
 });</string>
 	<key>IDECodeSnippetIdentifier</key>

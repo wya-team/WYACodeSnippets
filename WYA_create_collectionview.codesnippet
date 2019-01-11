@@ -9,7 +9,20 @@
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// 创建collectionView</string>
+	<string>UICollectionView * collectionView = ({
+        UICollectionViewFlowLayout * layout = [[UICollectionViewFlowLayout alloc] init];
+        layout.scrollDirection = <#UICollectionViewScrollDirection#>;
+        layout.headerReferenceSize = CGSizeMake(<#width#>, <#height#>);
+        layout.minimumLineSpacing = <#Float#>; //行间距
+        layout.minimumInteritemSpacing = <#Float#>; //列间距
+        collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
+        collectionView.delegate = self;
+        collectionView.dataSource = self;
+        collectionView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+        [collectionView registerNib:[UINib nibWithNibName:<#NibName#> bundle:nil] forCellWithReuseIdentifier:<#CellName#>];
+        [collectionView registerClass:[<#CellClass#> class] forCellWithReuseIdentifier:<#CellName#>];
+        collectionView;
+    });</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>126C9EA7-7D92-48FE-968D-B1CD7CA0880A</string>
 	<key>IDECodeSnippetLanguage</key>
