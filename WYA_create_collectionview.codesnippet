@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>create_vc_collectionview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// 替换 ViewController
+#import "ViewController.h"
+
+@interface ViewController ()&lt;UICollectionViewDelegate,UICollectionViewDataSource&gt; {
+    
+}
+// collectionView
+@property(nonatomic, strong) UICollectionView *collectionView;
+// arrData
+@property(nonatomic, strong) NSMutableArray *arrData;
+
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    
+    // 加载自定义导航
+    [self layoutNav];
+    // 其它view
+    [self layoutOtherView];
+    // ...
+    
+    // 初始化数据
+    [self initData];
+    // 添加通知
+    [self addNotification];
+}
+#pragma mark - viewWillAppear
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    [self initData];
+}
+#pragma mark - loadView
+// 自定义导航
+- (void)layoutNav {
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    NSString *navTitle = @"微课堂";
+    [self createNavWithTitle:navTitle createMenuItem:^UIView *(int nIndex) {
+        
+        //        if (nIndex == 0){
+        //
+        //            UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        //            [btn setFrame:CGRectMake(0, (self.navView.height - KNaVButtonHeight)/2, kNavButtonWidth, KNaVButtonHeight)];
+        //            UIImage *image = [UIImage imageNamed:@"返回白"];
+        //            // [btn setTitle:@"返回" forState:UIControlStateNormal];
+        //            [btn setImage:image forState:UIControlStateNormal];
+        //            [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        //            [btn addTarget:self action:@selector(backBtnAction) forControlEvents:UIControlEventTouchUpInside];
+        //            return btn;
+        //        }
+        
+        return nil;
+    }];
+    
+    // 放在此处以免 block造成的异步。
+    self.navIV.backgroundColor = [UIColor orangeColor];
+    // 默认不透明
+    self.navIV.alpha = 1;
+}
+// 其它view
+- (void)layoutOtherView {
+    
+    //此处必须要有创见一个UICollectionViewFlowLayout的对象
+    UICollectionViewFlowLayout *layout=[[UICollectionViewFlowLayout alloc]init];
+    //同一行相邻两个cell的最小间距
+    layout.minimumInteritemSpacing = 5;
+    //最小两行之间的间距
+    layout.minimumLineSpacing = 10;
+    
+    self.collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, kNavBarHeight, kMScreen_W, kMScreen_H - kNavBarHeight - kBottomHeight) collectionViewLayout:layout];
+    self.collectionView.backgroundColor=[UIColor clearColor];
+    self.collectionView.delegate = self;
+    self.collectionView.dataSource = self;
+    //这个是横向滑动
+    //layout.scrollDirection=UICollectionViewScrollDirectionHorizontal;
+    [self.view addSubview:self.collectionView];
+    
+    /*
+     * 这是重点 必须注册cell
+     */
+    // 这种是xib建的cell 需要这么注册
+    /**
+     UINib *cellNib=[UINib nibWithNibName:@"CollectionViewCell" bundle:nil];
+     [_collectionView registerNib:cellNib forCellWithReuseIdentifier:@"CollectionViewCell"];
+     */
+    // 这种是自定义cell不带xib的注册
+    // CollectionViewCell
+    [self.collectionView registerClass:[&lt;#CollectionViewCell#&gt; class] forCellWithReuseIdentifier:@"CourseCollectionViewCell"];
+    //这种是原生cell的注册
+    //    [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
+    
+    //这是头部与脚部的注册
+    /**
+     UINib *cellNib1=[UINib nibWithNibName:@"CollectionReusableView" bundle:nil];
+     [_collectionView registerNib:cellNib1 forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"CollectionReusableView"];
+     [_collectionView registerNib:cellNib1 forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"CollectionReusableView"];
+     */
+}
+
+#pragma mark - 初始化数据
+- (void)initData {
+    
+    if (!self.arrData) {
+        self.arrData = [NSMutableArray new];
+    } else {
+        [self.arrData removeAllObjects];
+    }
+}
+
+// 一共有多少个组
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    return 1;
+}
+// 每一组有多少个cell
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return [self.arrData count];
+}
+// 每一个cell是什么
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    CourseCollectionViewCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:@"CourseCollectionViewCell" forIndexPath:indexPath];
+    cell.backgroundColor = CLEARCOLOR;
+    
+    Video *model = _arrData[indexPath.item];
+    [cell setDataWithModel:model];
+    
+    return cell;
+}
+
+// 头部和脚部的加载
+//-(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
+//    UICollectionReusableView *view=[collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"CollectionReusableView" forIndexPath:indexPath];
+//    UILabel *label=[[UILabel alloc]initWithFrame:CGRectMake(110, 20, 100, 30)];
+//    if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
+//        label.text=@"头";
+//    }else{
+//        label.text=@"脚";
+//    }
+//    [view addSubview:label];
+//    return view;
+//}
+
+// 每一个分组的上左下右间距
+-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
+    return UIEdgeInsetsMake(10, 10, 10, 10);
+}
+
+// 头部试图的大小
+//-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
+//    return CGSizeMake(50, 60);
+//}
+
+//脚部试图的大小
+//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section {
+//    return CGSizeMake(50, 60);
+//}
+//定义每一个cell的大小
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    CGFloat w = CEIL((kMScreen_W - 30) / 2);
+    return CGSizeMake(w, w + 30);
+}
+// cell的点击事件
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    // cell被点击后移动的动画
+}
+#pragma mark - BtnAction
+
+#pragma mark - Notification
+- (void)addNotification {
+    
+    // [NNC_DC addObserver:self selector:@selector(&lt;#selector#&gt;) name:&lt;#(nullable NSNotificationName)#&gt; object:nil];
+}
+/**
+ - (void)nameNoti:(NSNotification *)noti {
+ 
+ NSDictionary *dictObject = [noti object];
+ NSDictionary *dictInfo = [noti userInfo];
+ }
+ */
+#pragma mark - Self
+- (void)dealloc {
+    
+    // 移除self的所有通知
+    [NNC_DC removeObserver:self];
+    // ...
+}
+- (void)didReceiveMemoryWarning {
+    
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+@end
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>126C9EA7-7D92-48FE-968D-B1CD7CA0880A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>继承于BasicViewController 带UICollectionView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>create_vc_collectionview</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>create_iv</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIImageView *imageView = ({
+    imageView = [[UIImageView alloc] initWithFrame:CGRectMake( &lt;#x#&gt;, &lt;#y#&gt;, &lt;#width#&gt;, &lt;#height#&gt;)];
+    imageView.backgroundColor = &lt;#color#&gt;;
+    ViewBorderRadius(imageView, &lt;#radius#&gt;, &lt;#width#&gt;, &lt;#color#&gt;);
+    [&lt;#view#&gt; addSubview:imageView];
+    imageView;
+});
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>65D92B2A-CBCA-4E48-BE2B-F2219896DB71</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UIImageView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>create_iv</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
