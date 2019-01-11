@@ -100,14 +100,16 @@ $ python setup_snippets.py
 > 6. `getMaxY` - 展开 `CGRectGetMaxY()`
 > 7. `addtarget` - 调用 `UIControl addTarget:action:forEvents:` 方法
 > 8. `layoutSubviews` - 展开 `layoutSubviews` 方法
-> 9. `create_btn` - 创建一个UIButton(<font color="red">自定义未完成</font>)
-> 10. `create_imgview` - 创建一个UIImageView（<font color="red">自定义未完成</font>）
+> 9. `create_btn` - 创建一个UIButton
+> 10. `create_imgview` - 创建一个UIImageView
 > 11. `create_keyWindow` - 快速创建keyWindow
-> 12. `create_label` - 创建一个UILabel（<font color="red">自定义未完成</font>）
-> 13. `create_tf` - 创建一个UITextField（<font color="red">自定义未完成</font>）
-> 14. `create_view` - 创建一个UIView（<font color="red">自定义未完成</font>）
-> 15. `create_tableView` - 创建一个tableView(<font color="red">自定义未完成</font>)
-> 16. `create_collectionview` - 创建一个collectionview（<font color="red">自定义未完成</font>） 
+> 12. `create_label` - 创建一个UILabel
+> 13. `create_tf` - 创建一个UITextField
+> 14. `create_view` - 创建一个UIView
+> 15. `create_tableView` - 创建一个tableView
+> 16. `create_collectionview` - 创建一个collectionview 
+> 17. `layer_radius` - 对view设置圆角
+> 18. `lay_bordercolor` - 对view设置边框色
 
 ---
 
@@ -153,13 +155,15 @@ $ python setup_snippets.py
  
 #### Other
 
-> 1. `pragmaLifeCircle` - 展开一个用于Xcode导航的`#pragma mark ======= LifeCircle` Class的系统方法放在最前面
-> 2. `pragmaEvent` - 展开一个用于Xcode导航的`#pragma mark ======= Event` Class自定义的事件
-> 3. `pragmaNotifation` - 展开一个用于Xcode导航的`#pragma mark ======= Notifation`Class接收通知的方法
-> 4. `pragmaLazy` - 展开一个用于Xcode导航的`#pragma mark ======= Lazy`Class懒加载
-> 5. `pragmaSetter` - 展开一个用于Xcode导航的`#pragma mark ======= Setter`Class的setter方法
-> 6. `pragmaDelegate` - 展开一个用于Xcode导航的`#pragma mark ======= Delegate`Class遵守的代理
-> 7. `pragmaNetwork`  - 展开一个用于Xcode导航的`#pragma mark ======= Network`Class的网络请求方法
+> 1. `pragmalifeCircle` - 展开一个用于Xcode导航的`#pragma mark ======= LifeCircle` Class的系统方法放在最前面
+> 2. `pragmaevent` - 展开一个用于Xcode导航的`#pragma mark ======= Event` Class自定义的事件
+> 3. `pragmanotifation` - 展开一个用于Xcode导航的`#pragma mark ======= Notifation`Class接收通知的方法
+> 4. `pragmalazy` - 展开一个用于Xcode导航的`#pragma mark ======= Lazy`Class懒加载
+> 5. `pragmasetter` - 展开一个用于Xcode导航的`#pragma mark ======= Setter`Class的setter方法
+> 6. `pragmadelegate` - 展开一个用于Xcode导航的`#pragma mark ======= Delegate`Class遵守的代理
+> 7. `pragmanetwork`  - 展开一个用于Xcode导航的`#pragma mark ======= Network`Class的网络请求方法
+> 8. `pragmapublic` - 展开一个用于Xcode导航的`#pragma mark ======= Public Method`Class的公有方法
+> 9. `pragmaprivate` - 展开一个用于Xcode导航的`#pragma mark ======= Private Method`Class的私有方法
 
 ## WYAOCKit-CodeSnippets
 
