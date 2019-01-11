@@ -12,22 +12,44 @@
 
     - 我们在重写一些系统父类方法时候，Xcode是不会自动帮你调用super，有时候我们也会忘记，导致出现一个很难排查的诡异的bug
 
+- 其中以`WYA_`前缀开头的文件是通用的Code Snippets,以`WYAOCKit_`前缀开头的文件是专用于`WYAOCKit`框架的代码片段。在下方的快捷键汇总里，WYAOCKit的代码片段将会以WYAOCKit的形式标记出来。
+
+ 
 ---
 
 ## 使用方式
 
-- Xcode的codesnippets文件存放于`~/Library/Developer/Xcode/UserData/CodeSnippets`目录，只要直接把`*.codesnippets`文件放到这个目录下（若没有自己创建）,重启Xcode即可生效。
+- Xcode的codesnippets文件存放于`~/Library/Developer/Xcode/UserData/CodeSnippets`目录，只要直接把`*.codesnippets`文件放到这个目录下（若没有自己创建）,<font color="red">重启Xcode即可生效。</font>
 
-- 为了方便更新，建议直接将WYA-iOS-codesnippets clone到这个目录内（注意，不是在codeSnippets里创建一个WYA-iOS-codesnippets目录，这里不支持子目录）：
+- 为了方便更新，建议直接将WYACodeSnippets clone到这个目录内（注意，不是在codeSnippets里创建一个WYACodeSnippets目录，这里不支持子目录）：
+#### 终端导入
 
->```
->cd ~/Library/Developer/Xcode/UserData/CodeSnippets
->git clone https://github.com/wya-team/WYACodeSnippets.git
->cd WYACodeSnippets
->
->```
+- 执行以下命令
 
-- 其中以`WYA_`前缀开头的文件是通用的Code Snippets,以`WYAOCKit_`前缀开头的文件是专用于`WYAOCKit`框架的代码片段。在下方的快捷键汇总里，WYAOCKit的代码片段将会以WYAOCKit的形式标记出来。
+>进入到`~/Library/Developer/Xcode/UserData/CodeSnippets`路径后
+>clone WYACodeSnippets文件
+>进入到WYACodeSnippets文件路径下
+>执行Python脚本
+>重启Xcode 
+
+- 命令如下
+
+```
+$ cd ~/Library/Developer/Xcode/UserData/CodeSnippets
+$ git clone https://github.com/wya-team/WYACodeSnippets.git
+$ cd WYACodeSnippets
+$ python setup_snippets.py
+```
+
+- 当仓库提交新功能后，可以拉取更新，然后进入WYACodeSnippets中执行python脚本即可，不要忘了重启Xcode
+
+
+
+#### 手动导入
+
+- 手动下载后将WYACodeSnippets文件里的<font color="red">`.codesnippet`</font>手动全部拖进<font color="red">`~/Library/Developer/Xcode/UserData/CodeSnippets`</font>路径里
+
+- <font color="red">切记导入完成后需要重新启动Xcode,后续git仓库更新还需要手动导入更新的内容。</font>
 
 ---
 
@@ -43,7 +65,7 @@
 > 6. `par` - 定义一个 assign, readonly 的 property
 > 7. `pwr` - 定义一个 weak, readonly 的property
 > 8. `pwd` - 定义一个weak,delegate的property 
-> 9. `sharedInstance` 为当前类创建一个实现吧单例功能的shareInstance方法
+> 9. `sharedInstance` 为当前类创建一个实现吧单例功能的shareInstance方法（<font color="red">自定义未完成</font>）
 
 ---
 
