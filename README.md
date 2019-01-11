@@ -43,6 +43,9 @@ $ python setup_snippets.py
 
 - 当仓库提交新功能后，可以拉取更新，然后进入WYACodeSnippets中执行python脚本即可，不要忘了重启Xcode
 
+<font color="red">注意：
+如果使用SourcesTree clone项目时，需要创建的文件夹名字必须使用WYACodeSnippets，否则无法自动导入代码块
+</font>
 
 
 #### 手动导入
