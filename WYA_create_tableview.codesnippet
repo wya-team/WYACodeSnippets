@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>create_vc_tableview</string>
+	<string>create_tableview</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>UITableView * tableView = ({
@@ -21,9 +21,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>继承于BasicViewController 带UITableView</string>
+	<string>UITableView</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>create_vc_tableview</string>
+	<string>create_tableview</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

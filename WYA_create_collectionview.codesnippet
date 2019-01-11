@@ -1,26 +1,27 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>create_vc_collectionview</string>
+	<string>create_collectionview</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>UICollectionView * collectionView = ({
         UICollectionViewFlowLayout * layout = [[UICollectionViewFlowLayout alloc] init];
-        layout.scrollDirection = <#UICollectionViewScrollDirection#>;
-        layout.headerReferenceSize = CGSizeMake(<#width#>, <#height#>);
-        layout.minimumLineSpacing = <#Float#>; //行间距
-        layout.minimumInteritemSpacing = <#Float#>; //列间距
+        layout.scrollDirection = &lt;#UICollectionViewScrollDirection#&gt;;
+        layout.headerReferenceSize = CGSizeMake(&lt;#width#&gt;, &lt;#height#&gt;);
+        layout.minimumLineSpacing = &lt;#Float#&gt;; //行间距
+        layout.minimumInteritemSpacing = &lt;#Float#&gt;; //列间距
         collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
         collectionView.delegate = self;
         collectionView.dataSource = self;
         collectionView.backgroundColor = [UIColor groupTableViewBackgroundColor];
-        [collectionView registerNib:[UINib nibWithNibName:<#NibName#> bundle:nil] forCellWithReuseIdentifier:<#CellName#>];
-        [collectionView registerClass:[<#CellClass#> class] forCellWithReuseIdentifier:<#CellName#>];
+        [collectionView registerNib:[UINib nibWithNibName:&lt;#NibName#&gt; bundle:nil] forCellWithReuseIdentifier:&lt;#CellName#&gt;];
+        [collectionView registerClass:[&lt;#CellClass#&gt; class] forCellWithReuseIdentifier:&lt;#CellName#&gt;];
         collectionView;
     });</string>
 	<key>IDECodeSnippetIdentifier</key>
@@ -28,9 +29,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>继承于BasicViewController 带UICollectionView</string>
+	<string>UICollectionView</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>create_vc_collectionview</string>
+	<string>create_collectionview</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
