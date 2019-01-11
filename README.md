@@ -65,7 +65,7 @@ $ python setup_snippets.py
 > 6. `par` - 定义一个 assign, readonly 的 property
 > 7. `pwr` - 定义一个 weak, readonly 的property
 > 8. `pwd` - 定义一个weak,delegate的property 
-> 9. `sharedInstance` 为当前类创建一个实现吧单例功能的shareInstance方法（<font color="red">自定义未完成</font>）
+> 9. `sharedInstance` 为当前类创建一个实例的单例功能的shareInstance方法
 
 ---
 
