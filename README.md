@@ -167,6 +167,7 @@ $ python setup_snippets.py
 > 7. `pragmanetwork`  - 展开一个用于Xcode导航的`#pragma mark ======= Network`Class的网络请求方法
 > 8. `pragmapublic` - 展开一个用于Xcode导航的`#pragma mark ======= Public Method`Class的公有方法
 > 9. `pragmaprivate` - 展开一个用于Xcode导航的`#pragma mark ======= Private Method`Class的私有方法
+> 10. `pragma` - 展开一个用于Xcode导航的`#pragma mark ======= XXXX` 
 
 ## WYAOCKit-CodeSnippets
 
