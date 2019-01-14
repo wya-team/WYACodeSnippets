@@ -9,17 +9,15 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UITextField *textField = ({
-    textField = [[UITextField alloc]initWithFrame:CGRectMake( &lt;#x#&gt;, &lt;#y#&gt;, &lt;#width#&gt;, &lt;#height#&gt;)];
-    textField.text = &lt;#string#&gt;;
-    textField.textColor = &lt;#color#&gt;;
-    textField.keyboardType = UIKeyboardTypeDefault;
-    textField.returnKeyType = UIReturnKeyDone;
-    textField.placeholder = &lt;#string#&gt;;
-    textField.font = [UIFont systemFontOfSize:&lt;#(CGFloat)#&gt;];
-    textField.delegate = self;
-    textField;
-});</string>
+	<string>UITextField * object = [[UITextField alloc]initWithFrame:CGRectMake( &lt;#x#&gt;, &lt;#y#&gt;, &lt;#width#&gt;, &lt;#height#&gt;)];
+    object.text = &lt;#string#&gt;;
+    object.textColor = &lt;#color#&gt;;
+    object.keyboardType = UIKeyboardTypeDefault;
+    object.returnKeyType = UIReturnKeyDone;
+    object.placeholder = &lt;#string#&gt;;
+    object.font = [UIFont systemFontOfSize:&lt;#(CGFloat)#&gt;];
+    object.delegate = self;
+    object;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>BE9DD0FB-EAF5-4DAD-8EDF-41EF03A3A022</string>
 	<key>IDECodeSnippetLanguage</key>

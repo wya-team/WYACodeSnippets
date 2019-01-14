@@ -9,18 +9,16 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UIButton * button = ({
-	button = [[UIButton alloc]initWithFrame:CGRectMake( &lt;#x#&gt;, &lt;#y#&gt;, &lt;#width#&gt;, &lt;#height#&gt;)];
-	[button setTitle:&lt;#(nullable NSString *)#&gt; forState:UIControlStateNormal];
-	[button setTitle:&lt;#(nullable NSString *)#&gt; forState:UIControlStateSelected];
-	[button setTitleColor:&lt;#(nullable UIColor *)#&gt; forState:UIControlStateNormal];
-	[button setImage:&lt;#(nullable UIImage *)#&gt; forState:UIControlStateNormal];
-	[button setImage:&lt;#(nullable UIImage *)#&gt; forState:UIControlStateSelected];
-	button.titleLabel.font = [UIFont systemFontOfSize:&lt;#(CGFloat)#&gt;];
-	[button setBackgroundImage:&lt;#(nullable UIImage *)#&gt; forState:UIControlStateNormal];
-	[button addTarget:self action:@selector(&lt;#selector#&gt;) forControlEvents:UIControlEventTouchUpInside];
-	button;
-});</string>
+	<string>UIButton *  object = [[UIButton alloc]initWithFrame:CGRectMake( &lt;#x#&gt;, &lt;#y#&gt;, &lt;#width#&gt;, &lt;#height#&gt;)];
+	[object setTitle:&lt;#(nullable NSString *)#&gt; forState:UIControlStateNormal];
+	[object setTitle:&lt;#(nullable NSString *)#&gt; forState:UIControlStateSelected];
+	[object setTitleColor:&lt;#(nullable UIColor *)#&gt; forState:UIControlStateNormal];
+	[object setImage:&lt;#(nullable UIImage *)#&gt; forState:UIControlStateNormal];
+	[object setImage:&lt;#(nullable UIImage *)#&gt; forState:UIControlStateSelected];
+	object.titleLabel.font = [UIFont systemFontOfSize:&lt;#(CGFloat)#&gt;];
+	[object setBackgroundImage:&lt;#(nullable UIImage *)#&gt; forState:UIControlStateNormal];
+	[object addTarget:self action:@selector(&lt;#selector#&gt;) forControlEvents:UIControlEventTouchUpInside];
+	object;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>D4251DE1-1177-4C75-A156-8910001059F3</string>
 	<key>IDECodeSnippetLanguage</key>

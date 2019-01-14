@@ -10,20 +10,18 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UICollectionView * collectionView = ({
-        UICollectionViewFlowLayout * layout = [[UICollectionViewFlowLayout alloc] init];
-        layout.scrollDirection = &lt;#UICollectionViewScrollDirection#&gt;;
-        layout.headerReferenceSize = CGSizeMake(&lt;#width#&gt;, &lt;#height#&gt;);
-        layout.minimumLineSpacing = &lt;#Float#&gt;; //行间距
-        layout.minimumInteritemSpacing = &lt;#Float#&gt;; //列间距
-        collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
-        collectionView.delegate = self;
-        collectionView.dataSource = self;
-        collectionView.backgroundColor = [UIColor groupTableViewBackgroundColor];
-        [collectionView registerNib:[UINib nibWithNibName:&lt;#NibName#&gt; bundle:nil] forCellWithReuseIdentifier:&lt;#CellName#&gt;];
-        [collectionView registerClass:[&lt;#CellClass#&gt; class] forCellWithReuseIdentifier:&lt;#CellName#&gt;];
-        collectionView;
-    });</string>
+	<string>UICollectionViewFlowLayout * layout = 	[[UICollectionViewFlowLayout alloc] init];
+    layout.scrollDirection = &lt;#UICollectionViewScrollDirection#&gt;;
+    layout.headerReferenceSize = CGSizeMake(&lt;#width#&gt;, &lt;#height#&gt;);
+    layout.minimumLineSpacing = &lt;#Float#&gt;; //行间距
+    layout.minimumInteritemSpacing = &lt;#Float#&gt;; //列间距
+   	UICollectionView * object = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
+    object.delegate = self;
+    object.dataSource = self;
+    object.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    [object registerNib:[UINib nibWithNibName:&lt;#NibName#&gt; bundle:nil] forCellWithReuseIdentifier:&lt;#CellName#&gt;];
+    [object registerClass:[&lt;#CellClass#&gt; class] forCellWithReuseIdentifier:&lt;#CellName#&gt;];
+    object;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>126C9EA7-7D92-48FE-968D-B1CD7CA0880A</string>
 	<key>IDECodeSnippetLanguage</key>

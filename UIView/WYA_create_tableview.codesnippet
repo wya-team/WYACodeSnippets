@@ -9,13 +9,12 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UITableView * tableView = ({
-        tableView = [[UITableView alloc]initWithFrame:&lt;#(CGRect)#&gt; style:UITableViewStylePlain];
-        tableView.delegate       = self;
-        tableView.dataSource     = self;
-        tableView.separatorStyle = &lt;#UITableViewCellSeparatorStyle#&gt;;
-        [tableView registerClass:[&lt;#CellClass#&gt; class] forCellReuseIdentifier:&lt;#CellName#&gt;];
-    });</string>
+	<string>UITableView * object = [[UITableView alloc]initWithFrame:&lt;#(CGRect)#&gt; style:UITableViewStylePlain];
+    object.delegate       = self;
+    object.dataSource     = self;
+    object.separatorStyle = &lt;#UITableViewCellSeparatorStyle#&gt;;
+    [object registerClass:[&lt;#CellClass#&gt; class] forCellReuseIdentifier:&lt;#CellName#&gt;];
+	object;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>B800C7EB-BA84-44AE-AA6E-DCF7CCE51409</string>
 	<key>IDECodeSnippetLanguage</key>
