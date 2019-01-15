@@ -30,7 +30,6 @@ filelist7 = os.listdir(path_view)
 filelist8 = os.listdir(path_viewcontroller)
 filelist9 = os.listdir(path_ockit)
 
-# filelist = [filelist1,filelist2.filelist3,filelist4,filelist5,filelist6,filelist7,filelist8,filelist9]
 # Block
 for files in filelist1:
     filename1 = os.path.splitext(files)[1]  # 读取文件后缀名
@@ -45,7 +44,7 @@ for files in filelist1:
 
     else:
         continue
-#Function
+# Function
 for files in filelist2:
     filename1 = os.path.splitext(files)[1]  # 读取文件后缀名
     filename0 = os.path.splitext(files)[0]  # 读取文件名
@@ -59,7 +58,7 @@ for files in filelist2:
 
     else:
         continue
-#NSObject
+# NSObject
 for files in filelist3:
     filename1 = os.path.splitext(files)[1]  # 读取文件后缀名
     filename0 = os.path.splitext(files)[0]  # 读取文件名
@@ -74,7 +73,7 @@ for files in filelist3:
     else:
         continue
 
-#Other
+# Other
 for files in filelist4:
     filename1 = os.path.splitext(files)[1]  # 读取文件后缀名
     filename0 = os.path.splitext(files)[0]  # 读取文件名
@@ -89,7 +88,7 @@ for files in filelist4:
     else:
         continue
 
-#UICollectionView
+# UICollectionView
 for files in filelist5:
     filename1 = os.path.splitext(files)[1]  # 读取文件后缀名
     filename0 = os.path.splitext(files)[0]  # 读取文件名
@@ -104,7 +103,7 @@ for files in filelist5:
     else:
         continue
 
-#UITableView
+# UITableView
 for files in filelist6:
     filename1 = os.path.splitext(files)[1]  # 读取文件后缀名
     filename0 = os.path.splitext(files)[0]  # 读取文件名
@@ -119,7 +118,7 @@ for files in filelist6:
     else:
         continue
 
-#UIView
+# UIView
 for files in filelist7:
     filename1 = os.path.splitext(files)[1]  # 读取文件后缀名
     filename0 = os.path.splitext(files)[0]  # 读取文件名
@@ -134,7 +133,7 @@ for files in filelist7:
     else:
         continue
 
-#UIVIewController
+# UIVIewController
 for files in filelist8:
     filename1 = os.path.splitext(files)[1]  # 读取文件后缀名
     filename0 = os.path.splitext(files)[0]  # 读取文件名
@@ -149,7 +148,7 @@ for files in filelist8:
     else:
         continue
 
-#WYAOCKit
+# WYAOCKit
 for files in filelist9:
     filename1 = os.path.splitext(files)[1]  # 读取文件后缀名
     filename0 = os.path.splitext(files)[0]  # 读取文件名
