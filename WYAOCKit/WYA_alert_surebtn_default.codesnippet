@@ -10,13 +10,13 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>WYAAlertController * alert =
-                [WYAAlertController wya_alertWithTitle:@"Welcome"
-                                               Message:@"欢迎使用 WYAKit ！！"
+                [WYAAlertController wya_alertWithTitle:&lt;#title#&gt;
+                                               Message:&lt;#message#&gt;
                                       AlertLayoutStyle:WYAAlertLayoutStyleVertical];
             alert.backgroundButton.enabled = NO;
             // 创建 action
             WYAAlertAction * defaultAction =
-                [WYAAlertAction wya_actionWithTitle:@"知道了"
+                [WYAAlertAction wya_actionWithTitle:&lt;#btntitle#&gt;
                                               style:WYAAlertActionStyleDefault
                                             handler:^{ NSLog(@"Default"); }];
             [alert wya_addAction:defaultAction];

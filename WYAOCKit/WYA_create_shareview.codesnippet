@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>wya_shareview</string>
+	<string>wya_create_shareview</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -23,7 +23,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>从WYAKit中创建一个分享的View</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>wya_shareview</string>
+	<string>wya_create_shareview</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
