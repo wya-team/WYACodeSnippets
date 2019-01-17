@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>wya_create_progressview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>WYAProgressView * object = [[WYAProgressView alloc] initWithFrame:&lt;#frame#&gt;
+                         progressViewStyle:&lt;#WYAProgressViewStyle#&gt;];
+	object.borderWidth = &lt;#width#&gt;;
+	object;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>37d8015c-4651-46cd-8ba8-178758ceb3ce</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>从WYAKit中创建一个进度条视图</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>wya_create_progressview</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

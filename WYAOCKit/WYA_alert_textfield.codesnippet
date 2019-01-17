@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>wya_alert_textfield</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>WYAAlertController * alert =
+                [WYAAlertController wya_alertWithTitle:&lt;#title#&gt;
+                                               Message:&lt;#message#&gt;
+                                      AlertLayoutStyle:WYAAlertLayoutStyleHorizontal];
+            alert.backgroundButton.enabled = NO;
+            alert.presentStyle             = WYAPopupPresentStyleExpandHorizontal;
+            alert.dismissStyle             = WYAPopupDismissStyleContractHorizontal;
+            // 创建 action
+            WYAAlertAction * defaultAction =
+                [WYAAlertAction wya_actionWithTitle:&lt;#btntitle#&gt;
+                                              style:WYAAlertActionStyleCancel
+                                            handler:^{ NSLog(@"Sure"); }];
+            WYAAlertAction * cancelAction =
+                [WYAAlertAction wya_actionWithTitle:&lt;#btntitle#&gt;
+                                              style:WYAAlertActionStyleDefault
+                                            handler:^{ NSLog(@"Cancel"); }];
+            [alert wya_addAction:defaultAction];
+            [alert wya_addAction:cancelAction];
+            [alert wya_addTextField:&lt;#UITextField#&gt;];
+            [self presentViewController:alert animated:YES completion:nil];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>edea272e-90f0-4b00-8c45-0bdfb4c67eff</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>从WYAKit中创建一个带输入框的alert</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>wya_alert_textfield</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

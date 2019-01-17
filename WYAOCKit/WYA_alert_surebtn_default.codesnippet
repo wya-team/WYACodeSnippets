@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>wya_alert_surebtn_default</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>WYAAlertController * alert =
+                [WYAAlertController wya_alertWithTitle:@"Welcome"
+                                               Message:@"欢迎使用 WYAKit ！！"
+                                      AlertLayoutStyle:WYAAlertLayoutStyleVertical];
+            alert.backgroundButton.enabled = NO;
+            // 创建 action
+            WYAAlertAction * defaultAction =
+                [WYAAlertAction wya_actionWithTitle:@"知道了"
+                                              style:WYAAlertActionStyleDefault
+                                            handler:^{ NSLog(@"Default"); }];
+            [alert wya_addAction:defaultAction];
+            [self presentViewController:alert animated:YES completion:nil];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>75ca9c12-1d5e-4ba3-921c-9995f0a0f491</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>从WYAKit中创建一个只有一个确定按钮的alert</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>wya_alert_surebtn_default</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

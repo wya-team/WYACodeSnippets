@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>wya_create_noticebar</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> WYANoticeBar * object = [[WYANoticeBar alloc]
+        initWithFrame:&lt;#frame#&gt;];
+    object.showNoticeButton      = YES;
+    object.noticeButtonImage     = [UIImage imageNamed:&lt;#imageNamed#&gt;];
+    object.showRightButton       = YES;
+    object.rightButtonImage      = [UIImage imageNamed:&lt;#imageNamed#&gt;];
+    object.showText              = &lt;#text#&gt;;
+    object.showTextColor         = &lt;#color#&gt;;
+    object.noticeBackgroundColor = &lt;#color#&gt;;
+	object;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>82a126fe-eeaf-4d22-8be6-2fa51e3b63ac</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>从WYAKit中创建一个通知栏滚动视图</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>wya_create_noticebar</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

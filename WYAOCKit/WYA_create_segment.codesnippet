@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>wya_create_segment</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> WYASegmentedControl * object =
+                [WYASegmentedControl wya_initWithFrame:&lt;#frame#&gt;
+                                       itemsTitleArray:@[&lt;#title1#&gt;,&lt;#title1#&gt;]];
+            object.delegate        = self;
+           // object.borderColor     = &lt;#color#&gt;;
+           // object.itemSelectColor = &lt;#color#&gt;;
+           // object.itemNormalColor = &lt;#color#&gt;;
+            object;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8f47a2fe-1c96-4dfc-a52f-f2d4cfb389ad</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>从WYAKit中创建一个segment</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>wya_create_segment</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

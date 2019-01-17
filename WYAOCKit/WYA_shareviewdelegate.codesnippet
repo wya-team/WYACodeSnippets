@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>wya_shareviewdelegate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)wya_shareView:(WYAShareView *)shareView
+    didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+                   itemTitle:(NSString *)title {
+    // code...
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>aa5d5b77-2e1d-42bb-96db-c34e6a02bef2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>从WYAKit中分享的View代理</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>wya_shareviewdelegate</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

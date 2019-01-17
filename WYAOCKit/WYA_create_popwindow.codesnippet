@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>wya_create_popwindow</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> &lt;#class#&gt; * tempvc    = [[&lt;#class#&gt; alloc] init];
+    tempvc.preferredContentSize          = CGSizeMake(&lt;#width#&gt;,&lt;#height#&gt;);
+    tempvc.modalPresentationStyle        = UIModalPresentationPopover;
+ 	UIPopoverPresentationController * popover = [test popoverPresentationController];
+    popover.delegate                          = self;
+    popover.permittedArrowDirections          = UIPopoverArrowDirectionUp; //设置箭头位置
+    popover.sourceView                        = sender;                    //设置目标视图
+    popover.sourceRect                        = sender.bounds;             //弹出视图显示位置
+    popover.backgroundColor                   = [UIColor whiteColor];      //设置弹窗背景颜色
+    popover.popoverBackgroundViewClass        = [WYACustomPopoverBackgroundView class];
+
+    [self presentViewController:test animated:YES completion:^{}];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8676f6d3-3a9d-424d-b451-c23c47052170</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>从WYAKit中创建一个popwindow</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>wya_create_popwindow</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

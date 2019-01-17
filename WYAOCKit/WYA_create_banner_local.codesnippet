@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>wya_create_banner_local</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>WYABannerView * object   = [WYABannerView wya_bannerViewWithFrame:&lt;#frame#&gt;
+                                                     bannerCellStyle:&lt;#WYABannerViewCellStyle#&gt;
+                                                            delegate:nil
+                                                    placeholderImage:nil];
+    object.localizationImageNamesGroup = @[&lt;#imgnamed#&gt;];
+    //    object.autoScroll = NO;
+    //    object.infiniteLoop = NO;
+    object.autoScrollTimeInterval     = &lt;#CGFloat#&gt;;
+    object.backgroundColor            = &lt;#color#&gt;;
+    object.currentPageDotColor        = &lt;#color#&gt;;
+    object.pageControlAliment         = WYABannerViewPageContolAlimentRight;
+    object.pageControlStyle           = WYABannerViewPageContolStyleClassic;
+    object.bannerImageViewContentMode = UIViewContentModeScaleAspectFit;
+    object;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>73422faf-bc77-48be-b608-ff0f600717ff</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>从WYAKit中创建一个读取本地图片的轮播图</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>wya_create_banner_local</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

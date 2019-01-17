@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>wya_create_keynumberboard_random</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>WYANumberKeyboard * object = [WYANumberKeyboard initRandomKeyboardWithTextFiled:&lt;#UITextfield#&gt;];
+            [object wya_numberKeyboadrDidChanged:^(NSString * _Nonnull value){
+        		// 值发生改变的回调
+
+    		}];
+
+    		[object wya_numberKeyboadrSurePressed:^{
+        		// 点击确定按钮回调
+
+    		}]; 
+            object;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>04dc8991-c69e-4bb9-ae40-4932bd08d1a6</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>从WYAKit中创建一个随机数字键盘</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>wya_create_keynumberboard_random</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
