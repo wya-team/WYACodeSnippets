@@ -21,7 +21,7 @@
 
 - Xcode的codesnippets文件存放于`~/Library/Developer/Xcode/UserData/CodeSnippets`目录，只要直接把`*.codesnippets`文件放到这个目录下（若没有自己创建）,<font color="red">重启Xcode即可生效。</font>
 
-- 为了方便更新，建议直接将WYACodeSnippets clone到这个目录内（注意，不是在codeSnippets里创建一个WYACodeSnippets目录，这里不支持子目录）：
+- 为了方便更新，建议直接将WYACodeSnippets clone到`~/Library/Developer/Xcode/UserData/CodeSnippets`这个目录内：
 #### 终端导入
 
 - 执行以下命令
