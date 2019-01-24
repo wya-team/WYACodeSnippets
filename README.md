@@ -171,27 +171,27 @@ $ python setup_snippets.py
 
 ## WYAOCKit-CodeSnippets
 
-> 1. wya_create_sharedview 分享
-> 2. wya_create_segment 创建WYASegmentControl
-> 3. wya_create_searchBar 创建搜索框
-> 4. wya_create_popwindow 创建UIPopoverPresentationController
-> 5. wya_create_keynumberboard_default 创建数字键盘
-> 6. wya_create_keynumberboard_random 创建随机数字键盘
-> 7. wya_create_bannerview_local 加载本地图片的轮播图
-> 8. wya_create_bannerview_url 加载网络图片的轮播图
-> 9. wya_create_noticebar 创建通知栏视图
-> 10. wya_create_imagecode 生成二维码
-> 11. wya_create_progressview 创建进度条试图
-> 12. wya_alert_surebtn_default  只有一个按钮弹框
-> 13. wya_alert_default 默认弹框 
-> 14. wya_alert_textfiled 有输入框的弹框
-> 15. wya_toast_center 中心提示
-> 16. wya_toast_bottom 底部提示
-> 17. wya_toast_success 成功提示
-> 18. wya_toast_fail 失败提示
-> 19. wya_toast_netfail 网络失败
-> 20. wya_toast_loading 加载
-> 21. wya_segmentedcontrol_delegate WYASegmentControlDelegate
-> 22. WYA_shareviewdelegate 分享试图的按钮点击事件代理方法
+> 1. `wya_create_sharedview `分享
+> 2. `wya_create_segment` 创建WYASegmentControl
+> 3. `wya_create_searchBar` 创建搜索框
+> 4. `wya_create_popwindow` 创建UIPopoverPresentationController
+> 5. `wya_create_keynumberboard_default` 创建数字键盘
+> 6. `wya_create_keynumberboard_random` 创建随机数字键盘
+> 7. `wya_create_bannerview_local` 加载本地图片的轮播图
+> 8. `wya_create_bannerview_url` 加载网络图片的轮播图
+> 9. `wya_create_noticebar` 创建通知栏视图
+> 10. `wya_create_imagecode` 生成二维码
+> 11. `wya_create_progressview` 创建进度条试图
+> 12. `wya_alert_surebtn_default`  只有一个按钮弹框
+> 13. `wya_alert_default` 默认弹框 
+> 14. `wya_alert_textfiled` 有输入框的弹框
+> 15. `wya_toast_center` 中心提示
+> 16. `wya_toast_bottom` 底部提示
+> 17. `wya_toast_success` 成功提示
+> 18. `wya_toast_fail` 失败提示
+> 19. `wya_toast_netfail` 网络失败
+> 20. `wya_toast_loading` 加载
+> 21. `wya_segmentedcontrol_delegate` 生成WYASegmentControlDelegate
+> 22. `WYA_shareviewdelegate` 分享试图的按钮点击事件代理方法
 
 
