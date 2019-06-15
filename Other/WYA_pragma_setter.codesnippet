@@ -6,7 +6,8 @@
 	<string>pragmasetter</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
+		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#pragma mark - Setter</string>

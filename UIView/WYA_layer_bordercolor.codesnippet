@@ -6,7 +6,7 @@
 	<string>lay_bordercolor</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>&lt;#View#&gt;.layer.borderColor = [UIColor &lt;#Color#&gt;].CGColor;
