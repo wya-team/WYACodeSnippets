@@ -6,7 +6,7 @@
 	<string>wya_toast_netfail</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>[UIView wya_warningToastWithMessage:@"网络失败"];</string>

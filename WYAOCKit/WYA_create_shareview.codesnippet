@@ -6,7 +6,7 @@
 	<string>wya_create_shareview</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>WYAShareView * object = [[WYAShareView alloc] init];

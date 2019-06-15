@@ -6,7 +6,7 @@
 	<string>wya_toast_center</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>[UIView wya_showCenterToastWithMessage:&lt;#message#&gt;];</string>

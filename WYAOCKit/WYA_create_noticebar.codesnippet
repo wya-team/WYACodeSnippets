@@ -6,7 +6,7 @@
 	<string>wya_create_noticebar</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string> WYANoticeBar * object = [[WYANoticeBar alloc]

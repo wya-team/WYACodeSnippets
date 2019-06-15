@@ -6,7 +6,7 @@
 	<string>create_tableview</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>UITableView * object = [[UITableView alloc]initWithFrame:&lt;#(CGRect)#&gt; style:UITableViewStylePlain];

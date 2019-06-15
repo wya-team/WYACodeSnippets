@@ -6,7 +6,7 @@
 	<string>wya_create_banner_local</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>WYABannerView * object   = [WYABannerView wya_bannerViewWithFrame:&lt;#frame#&gt;

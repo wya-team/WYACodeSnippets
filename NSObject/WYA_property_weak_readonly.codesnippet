@@ -6,7 +6,7 @@
 	<string>pwr</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>@property (nonatomic, weak, readonly) &lt;#type#&gt; &lt;#name#&gt;;</string>

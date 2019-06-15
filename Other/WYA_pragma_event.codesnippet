@@ -6,10 +6,11 @@
 	<string>pragmaevent</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
+		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark ======= Event</string>
+	<string>#pragma mark - Event</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>D96DA572-E030-4894-997A-D5EAE26295B8</string>
 	<key>IDECodeSnippetLanguage</key>

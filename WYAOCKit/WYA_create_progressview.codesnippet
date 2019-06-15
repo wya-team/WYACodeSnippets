@@ -6,7 +6,7 @@
 	<string>wya_create_progressview</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>WYAProgressView * object = [[WYAProgressView alloc] initWithFrame:&lt;#frame#&gt;

@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark ======= Setter</string>
+	<string>#pragma mark - Setter</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>6538E353-8A97-4AD9-935C-10DF2AFEEDC5</string>
 	<key>IDECodeSnippetLanguage</key>

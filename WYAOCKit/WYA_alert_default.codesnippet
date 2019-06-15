@@ -6,25 +6,19 @@
 	<string>wya_alert_default</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>WYAAlertController * alert =
-                [WYAAlertController wya_alertWithTitle:&lt;#title#&gt;
-                                               Message:&lt;#message#&gt;
-                                      AlertLayoutStyle:WYAAlertLayoutStyleHorizontal];
+            [WYAAlertController wya_alertWithTitle:&lt;#title#&gt;
+                                           Message:&lt;#message#&gt;
+                                  AlertLayoutStyle:WYAAlertLayoutStyleHorizontal];
             alert.backgroundButton.enabled = NO;
             alert.presentStyle             = WYAPopupPresentStyleBounce;
             alert.dismissStyle             = WYAPopupDismissStyleShrink;
             // 创建 action
-            WYAAlertAction * defaultAction =
-                [WYAAlertAction wya_actionWithTitle:&lt;#suretitle#&gt;
-                                              style:WYAAlertActionStyleCancel
-                                            handler:^{ NSLog(@"Sure"); }];
-            WYAAlertAction * cancelAction =
-                [WYAAlertAction wya_actionWithTitle:&lt;#cancle#&gt;
-                                              style:WYAAlertActionStyleDefault
-                                            handler:^{ NSLog(@"Cancel"); }];
+            WYAAlertAction * defaultAction = [WYAAlertAction wya_actionWithTitle:&lt;#(NSString *)#&gt; textColor:&lt;#(UIColor *)#&gt; textFont:&lt;#(UIFont *)#&gt; handler:&lt;#^(void)handler#&gt;];
+            WYAAlertAction * cancelAction = [WYAAlertAction wya_actionWithTitle:&lt;#(NSString *)#&gt; textColor:&lt;#(UIColor *)#&gt; textFont:&lt;#(UIFont *)#&gt; handler:&lt;#^(void)handler#&gt;];
             [alert wya_addAction:defaultAction];
             [alert wya_addAction:cancelAction];
             [self presentViewController:alert animated:YES completion:nil];</string>

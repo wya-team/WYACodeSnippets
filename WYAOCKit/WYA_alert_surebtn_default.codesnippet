@@ -6,19 +6,17 @@
 	<string>wya_alert_surebtn_default</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>WYAAlertController * alert =
-                [WYAAlertController wya_alertWithTitle:&lt;#title#&gt;
-                                               Message:&lt;#message#&gt;
-                                      AlertLayoutStyle:WYAAlertLayoutStyleVertical];
+            [WYAAlertController wya_alertWithTitle:&lt;#title#&gt;
+                                           Message:&lt;#message#&gt;
+                                  AlertLayoutStyle:WYAAlertLayoutStyleVertical];
             alert.backgroundButton.enabled = NO;
             // 创建 action
             WYAAlertAction * defaultAction =
-                [WYAAlertAction wya_actionWithTitle:&lt;#btntitle#&gt;
-                                              style:WYAAlertActionStyleDefault
-                                            handler:^{ NSLog(@"Default"); }];
+            [WYAAlertAction wya_actionWithTitle:&lt;#(NSString *)#&gt; textColor:&lt;#(UIColor *)#&gt; textFont:&lt;#(UIFont *)#&gt; handler:&lt;#^(void)handler#&gt;];
             [alert wya_addAction:defaultAction];
             [self presentViewController:alert animated:YES completion:nil];</string>
 	<key>IDECodeSnippetIdentifier</key>

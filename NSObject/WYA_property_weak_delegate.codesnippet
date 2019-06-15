@@ -6,7 +6,7 @@
 	<string>pwd</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>@property (nonatomic, weak) id&lt;&lt;#delegate#&gt;&gt; &lt;#name#&gt;;</string>

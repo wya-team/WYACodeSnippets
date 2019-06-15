@@ -6,10 +6,11 @@
 	<string>pragmalazy</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
+		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark ======= Lazy</string>
+	<string>#pragma mark - Lazy</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>1AB361D2-BFCF-4D90-ABCB-56D4C1932139</string>
 	<key>IDECodeSnippetLanguage</key>

@@ -6,7 +6,7 @@
 	<string>wya_toast_bottom</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>[UIView wya_showBottomToastWithMessage:&lt;#message#&gt;];</string>

@@ -6,7 +6,7 @@
 	<string>wya_create_keynumberboard_random</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>WYANumberKeyboard * object = [WYANumberKeyboard initRandomKeyboardWithTextFiled:&lt;#UITextfield#&gt;];
